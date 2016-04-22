@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/Javascript" />
+<meta name="keywords" content="フォーティシックスラボ,Linux,OSS,コンサルティング,組み込みシステム,組込みシステム,木内志朗,中野,3D Printer,FabLab" />
+<meta name="description" content="フォーティシックスラボはLinux、Androidなど組込みシステム開発のコンサルティングカンパニーです。"/>
+
+<title>組込みシステムコンサルティング｜フォーティシックスラボ｜東京</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon46.ico">
+
+<link rel="stylesheet" href="css/wideslider_1.css" type="text/css" media="all" />
+<link href="css/46lab_1.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/wideslider.js"></script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyB-xigpikqqkfLcfMKuQ2u1z05cDv6HBQc"></script>
+<script type="text/javascript" src="js/map.js"></script>
+
+<script type="text/javascript">  
+  $(function(){   
+    $('.bg_slideshow img:gt(0)').hide();  
+    setInterval(function() {  
+      $('.bg_slideshow :first-child').fadeOut(4000)  
+        .next('img').fadeIn(4000)  
+      .end().appendTo('.bg_slideshow');  
+    }, 7000);
+  });  
+</script>
+
+
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("img").lazyload({
+        placeholder : "image/space10x10.gif",
+        effect      : "fadeIn"
+    });
+});
+</script>
+
+    
+<script type="text/javascript">
+  $(function() {
+    $(window).bind("scroll" , function(e) {
+        var scrollTop = $(window).scrollTop();
+        $("#bg_slideshow").text(scrollTop);
+    });
+  });
+</script>
+
+<!-- Top Background images -->
+<script type="text/javascript">
+var point0Top = 290;
+var point00Top = 140;
+$(function() {
+    $(window).bind("scroll" , function(e) {
+        var scrollTop = $(window).scrollTop();
+        $("#bg_slideshow").text(scrollTop);
+		$("#top_title").css("top" , point0Top - (scrollTop * 0.3) + "px");
+<!--      $("#top_logo").css("top" , point00Top - (scrollTop * 0.1) + "px");   -->
+    });
+});
+</script>
+
+
+<script language="javaScript" type="text/javaScript">
+   $(function(){
+       $("#back-to-top").hide();
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 700){
+                   $("#back-to-top").fadeIn();
+            }   else{
+                   $("#back-to-top").fadeOut();
+            }
+        });
+        $("#back-to-top a").click(function(){
+            $("body,html").animate({
+                scrollTop:0
+           },500);
+           return false;
+       });
+    });
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35960194-7', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<!-- body -------------------------------------------->
+<body onload="initialize();">
+
+<div class="bg_slideshow">
+<img src="image/topbg07.jpg" width="1600" height="1024" />
+<img src="image/topbg11.jpg" width="1600" height="1024" />
+<img src="image/topbg10.jpg" width="1600" height="1024" />
+<img src="image/topbg08.jpg" width="1600" height="1024" />
+<img src="image/topbg09.jpg" width="1600" height="1024" />
+</div>
+
+<div id="logo_top"><a href="index.html" target="_self"><img src="image/logo_80x80-w.png"  border="0"></a></div>
+
+<div id="top_title"></div>
+
+<div id="top_logo"></div>
+
+<div class="point"><a href="#tag01"><img src="image/down80x35.png"></a></div>
+
+<!-- CONCEPT from HERE! -->
+<div id="topbg2">
+
+<a name="tag01" id="tag01"></a>
+
+<div class="topbg2cach"><img src="image/t-concept.png" width="190" height="40" />
+<div class="under-catch">コンセプト</div>
+</div>
+
+<div class="topbg2copy2">
+フォーティシックスラボは、オープンソースや組込みシステム開発のためのコンサルティングカンパニーです。<br />
+IoT時代に対応する新しい新しいシステム（組込みシステム）を生み出していきたいという思いから創業しました。<br />
+<br />
+これからの時代に求められるのは、新しい体験を生む出すサービスを実現するために必要となる<br />
+製品やシステムを創出していく事だと考えています。<br />
+新たなアイデアを現実の製品やシステムするためには、プロトタイプなど様々な試行錯誤を繰り返す必要があります。<br />
+そのための手段としてオープンソースは非常に重要な位置付けにあります。<br />
+現在、オープンソースの流れはソフトウエアだけに止まらずハードウェア、デザインにまで広がってきています。<br />
+オープンソースを最大限活用することにより、アイデアを早いサイクルで実体化できる可能性が広がります。<br />
+<br />
+私たちは「デザインとエンジニアリング」の視点で課題の本質を捉え、最適なソフトウエアとハードウェアによる<br />
+新しいシステムを生み提案をしていきます。<br />
+<br />
+
+</div>
+</div>
+
+<!-- SERVICE from HERE! -->
+<div id="topbg3">
+
+<a name="tag02" id="tag02"></a>
+
+<div class="topbg2cach"><img class="title_img" src="image/space10x10.gif" data-original="image/t-services.png" width="170" height="40" />
+<div class="under-catchw"> サービス </div>
+</div>
+
+<div class="svrcase">
+
+<div class="svrcase01">
+<div class="svrcopy01">CONSULTING</div>
+<div class="svrcopy02">コンサルティング</div>
+<a href="consulting.html" target="_self"><div class="form-w2">
+&#9547;</div></a>
+</div>
+
+<div class="svrcase02">
+<div class="svrcopy01">S/W DEVELOP</div>
+<div class="svrcopy02">ソフトウエア開発</div>
+<a href="swdev.html" target="_self"><div class="form-w2">
+&#9547;</div></a>
+</div>
+
+</div><!--wcase-->
+
+<div id="topbg3under">
+
+<div class="svrcase">
+
+<div class="svrcase04">
+<div class="svrcopy01">TRAINING</div>
+<div class="svrcopy02">トレーニング</div>
+<a href="training.html" target="_self"><div class="form-w2">
+&#9547;</div></a>
+</div>
+
+<div class="svrcase05">
+<div class="svrcopy01">BIZ. DEV</div>
+<div class="svrcopy02">ビジネス開発/企画</div>
+<a href="bizdev.html" target="_self"><div class="form-w2">
+&#9547;</div></a>
+</div>
+
+<div class="svrcase06">
+<div class="svrcopy01">FAB SPACE</div>
+<div class="svrcopy02">マイクロファブスペース</div>
+<a href="fabspace.html" target="_self"><div class="form-w2">
+&#9547;</div></a>
+</div>
+
+</div><!--wcase-->
+</div><!--topbg3under-->
+</div><!--topbg3-->
+
+
+<!-- ABOUT from here! -->
+
+<div id="topbg4">
+
+<a name="tag03" id="tag03"></a>
+<div class="topbg2cach"><img class="title_img" src="image/space10x10.gif" data-original="image/t-about.png" width="130" height="40"  />
+<div class="under-catch">合同会社フォーティシックスラボについて</div> 
+</div>
+
+<div id="topbg4a">
+
+<div class="about">
+<div class="about1">
+
+<strong>合同会社フォーティシックスラボ</strong><br />
+事務所：東京都中野区中野５−２４−１８　<br  />
+　　　　　　クロススクエアNAKANOビル９０２<br />
+登記住所：東京都杉並区浜田山４−３−３０−１０６<br /><br />
+Tel：03-5942-9810  Fax：03-5942-9810（兼用)<br />
+Email：info@46lab.com<br />
+URL：http://www.46lab.com<br />
+創業：2014.5.9<br />
+代表社員：木内志朗<br />
+営業時間：平日10：00～18：00<br />
+定休日：土・日・祝日<br />
+<br /><br /><br />
+</div><!-- /about1-->
+
+<div class="about2">
+<strong>Forty Six Lab. LLC</strong><br />
+Office：5-24-18-902 Nakano, Nakano-ku,<br />
+　　　　Tokyo, 164-0001 Japan<br />
+Registerd address：4-3-30-106 Hamadayama,<br />
+　　　　　Suginami-ku, Tokyo 168-0065 Japan<br />
+Tel：+81-3-5942-9810  Fax：+81-3-5942-9810<br />
+Email：info@46lab.com<br />
+URL：http://www.46lab.com<br />
+Established：May/9/2014<br />
+Management Director：Shiro Kiuchi<br />
+Biz. Hour：10:00 - 18:00<br />
+<br />
+<br /><br /><br />
+</div><!-- about2-->
+</div><!-- /about-->
+
+
+
+</div><!-- /topbg4a-->
+
+
+<div class="about">
+<div class="profile02">
+<strong>PROFILE</strong><br />
+代表　木内志朗について<br />
+</div>
+<div class="go">
+<!--
+<p class="slideropen">&#9547;<br />&#9473;</p>
+-->
+<p class="slideropen">&#9547;</p>
+</div>
+
+<div id="slideBox">
+<div id="mainbg-w">
+<div id="main">
+
+<div class="profile">
+<div class="profile01">代表社員 木内志朗（きうちしろう）プロフィール</div>
+<br />  
+大手医療機器メーカーにて、リアルタイムOSを使用した各種機器開発に従事したのち外資系大手RTOSベンダーにて、
+国内各種機器メーカの開発プロジェクトのサポート、コンサルティングを行ってきました。その後、2000年に
+MontaVista Software LLC. の日本法人立ち上げメンバーとして、技術部門のマネージメンドだけではなく、
+国内における組込みLinuxの普及に貢献してきました。同社を2012年2月に退社し、2012年3月より46 Lab. (個人事業者）
+として独立。2014年5月に合同会社フォーティシックスラボを設立し（法人成り）、現在に至ります。
+<br />
+<br />
+<strong>コンタクト：</strong><br />
+E-Mail:skiuchi(at)46lab.com  　(at)を＠に入れ替えてください。<br />
+Facebook:46kiuchi<br />
+twitter: 46kiuchi<br />
+<br />
+<br />
+<strong>職務略歴</strong><br />
+～1995年　株式会社エム・エス・シー（現、日本光電工業株式会社）<br />
+1995年～1997年　マイクロテックリサーチ株式会社（現、メンターグラフィックスジャパン株式会社）　主任技術者<br />
+1997年～1999年　インテグレーテッドシステムズ株式会社（現、ウインドリバー株式会社） プロダクトマーケティングマネージャ<br />
+2000年1月〜2000年7月　ウインドリバー株式会社　FAE部長<br />
+2000年7月～2012年2月　モンタビスタソフトウエアジャパン株式会社　技術本部長<br />
+2012年3月〜　46 Lab. 代表<br />
+2014年5月〜　合同会社フォーティシックスラボ 代表社員<br />
+<br />
+<strong>学 歴</strong><br />
+日本工業大学 専門職大学院　技術経営専攻　（技術経営修士）<br />
+東京電機大学工学部　電気通信学科卒<br />
+<br />
+<br />
+<strong>セミナー講師・講演実績</strong><br />
+◆Embedded Technology展（組込みシステム向け展示会毎年１１月開催）◆<br />
+2004年11月 「組込みLinuxを用いた組込みシステムの開発技法」<br />
+2005年11月 「組込みLinux開発週報と最新技術動向」<br />
+2006年11月 「組込みLinuxを使用した最新システム開発手法」<br />
+2007年11月 「組込みLinuxを使用した最新システム開発手法」<br />
+2008年11月 「組込みLinuxを使用した最新システム開発手法」<br />
+2009年11月 「組込みLinuxを使用した最新システム開発手法」<br />
+2010年12月 「組込みLinux開発手法と最新技術トレンド<br />
+　　～LinuxからAndroid、MeeGoまで最新技術トレンド解説～」<br />
+2011年11月 「Linuxを使用した製品開発の成功のポイント<br />
+　　～OSSを利用した製品開発におけるリスク軽減～」<br />
+2012年11月 「組込みLinux開発手法と最新技術トレンド<br />
+　　～LinuxからAndroid、MeeGoまで最新技術トレンド解説～」<br />
+2013年11月 「Linuxプラットフォーム開発における失敗事例から学ぶ成功のポイント」<br />
+2014年11月 「Linux、Androidプラットフォーム開発で失敗しないために必要な技術スキル<br />
+　　～OSSを使用した製品開発に必要なスキルと知識体系～」<br />
+2015年11月 「組込みLinux開発のおける課題と技術スキル<br />
+　　～「作る」から「上手く使いこなす」への転換～」<br />
+
+<br />
+◆Embedded Technology West展（組込みシステム向け展示会　関西）◆<br />
+2006年 5月 「組込みLinux開発手法と最新技術動向」<br />
+2007年 6月 「Embilixセッション　組込みLinux最新情報　～ここまで普及した組込みLinux～」<br />
+2010年 6月 「組込みLinuxを使用した最新システム開発手法」<br />
+<br />
+◆ESEC展（組込みシステム開発環境技術展）◆<br />
+2001年 月「Linuxシステム構築　～組込みLinuxによるシステム構築手法～」<br />
+2004年 5月 「組込みLinuxを使用したシステム開発手法」<br />
+2005年 6月 「徹底組込みLinux開発技法　～カーネルから応用まで～」<br />
+2006年 6月 「組込みLinux開発手法　～基礎から応用まで～」<br />
+2007年 5月 「組込みLinux開発手法と最新技術」<br />
+2008年 5月 「組込みLinux開発手法と最新技術」<br />
+2009年 5月 「Linuxを使用した組込みシステム構築手法」<br />
+<br />
+◆CQ出版主催セミナー◆<br />
+2004年11月 「組込み開発の基礎とトラブルシューティング」<br />
+2010年 2月 「クラウド時代の組込みLinux活用テクニック/起動時間短縮/リアルタイム性確保のためのノウハウ解説」<br />
+<br />
+◆TRON SHOW◆<br />
+2005年12月　「T-EngineとLinuxの協調環境の実装」<br />
+<br />
+◆Wireless Japan◆<br />
+2005年7月　「携帯電話向け組込みLinux mobilinux」<br />
+2006年7月　「携帯電話向け組込みLinuxプラットフォーム mobilinuxのご紹介」<br />
+2007年7月　「MontaVista Linuxベースのプラットフォーム mobilinuxが持つ可能性」<br />
+<br />
+◆Linuxコンソーシアム◆<br />
+2007年組込み開発における課題 パネルディスカッションパネラ<br />
+
+◆Linux Kernel Conference (OSDN主催）◆<br />
+2001年9月　「組込みシステムにおけるLinuxカーネルの実装」<br />
+2002年9月　「Linuxによる組込みシステム構築手法」<br />
+<br />
+◆Thailand TPA Seminar◆<br />
+2004年2月　「Introduction of Embedded Linux and the future view」<br />
+<br />
+◆その他多数の組込みソフトウエア、OSS関連セミナーで講演◆<br />
+<br />
+<br />
+<strong>執筆</strong>
+<br />
+CQ出版　インターフェース誌1996年12月号「リアルタイムOSで洗車機のモデルを制御する」<br />
+CQ出版　インターフェース誌1998年12月号「リアルタイムOSを使ったアプリケーション構築のポイント」<br />
+CQ出版　エンベデッドUNIX誌2003年１月「Linux2.5で標準化されたプリエンプタブルカーネルの実装」<br />
+CQ出版　「TECH Iシリーズ 組込みLinux入門」2003年 共著<br />
+CQ出版　インターフェース誌 2010年　１１月号「クラウド時代の組込みLinux」<br />
+電波新聞　DataCommunication誌 2009年5月13日　「組込みLinuxのABC　その１」<br />
+電波新聞　DataCommunication誌 2009年7月14日　「組込みLinuxのABC　その２」<br />
+電波新聞　DataCommunication誌 2009年8月12日　「組込みLinuxのABC　その３」<br />
+
+<br />
+<strong>公募プロジェクト</strong>
+<br />
+2003年 IPA 未踏ソフトウェア創造事業公募<br />
+「分散カーネルサービス」において共同開発者とともにiTRONとLinuxにおける分散カーネルサービスのプロトタイプ研究を行った。<br />
+<br />
+2004年 IPA オープンソフトウェア活用基盤整備事業公募<br />
+「組込みLinuxへのQOS(Quality Of Service)機能の実装及び標準化」プロジェクトにおいて、大学、協力会社と連携した開発のプロジェクトマネージメントを行った。<br />
+ <br />
+ 
+ </div><!--profile-->
+<!-- 
+<div class="go2"><a href="#tag02"><img src="image/up80x35.png" border="0"></a></div>
+-->
+</div><!-- /main -->
+</div><!-- /mainbg -->
+</div><!-- /mainbg-w -->
+
+</div><!-- /about1-->
+
+</div><!-- /topbg4-->
+
+<!-- contact from HERE! -->
+
+<div id="topbg5">
+<a name="tag04" id="tag04"></a>
+<div class="topbg2cach"><img class="title_img" src="image/space10x10.gif" data-original="image/t-contact.png" width="190" height="40" />
+<div class="under-catch">お問い合わせ</div>
+<br />
+合同会社フォーティシックスラボ<br />
+中野オフィス：〒164-0001 中野区中野5-24-18-902<br />
+Tel：03-5942-9810<br />
+Mail:info@46lab.com<br />
+</div>
+<!--- Pending 
+<a href="contact.html">
+<div class="form">
+CONTACT FORM (お問い合わせフォーム）
+</div>
+</a>
+-->
+<div class="adv">ご質問・ご相談・お見積もりなど、下記アドレスにお気軽にお問い合わせください。</div>
+
+<div class="form-2">
+<a href="mailto:info@46lab.com"><img class="title_img" src="image/space10x10.gif" data-original="image/mail.png" width="200" height="35" /></a></div>
+
+<div id="map_canvas"></div>
+</div><!--topbg5-->
+
+<!-- Footer -->
+<div id="footerbg1-t">
+<div id="footer1">
+
+<div id="face"><a href="https://www.facebook.com/46lab" target="_blank"><img src="image/facebook.png" width="30" height="30" border="0" /></a></div>
+<div id="twi"><a href="https://twitter.com/46kiuchi" target="_blank"><img src="image/twitter.png" width="30" height="30" border="0"></a></div>
+<div id="footernavi"><a href="index.html" style="text-decoration:none" target="_self">HOME</a>　</div>
+<div id="footercopy"><img src="image/46lab_110x18.png"  border="0"></div>
+
+</div><!-- /footer1 -->
+</div><!--/footerbg1-t-->
+
+
+<!-- Side menu bar -->
+<div id="side">
+<a href="#tag01" target="_self">
+<div class="sidenavi">
+CONCEPT</div></a>
+
+<a href="#tag02" target="_self">
+<div class="sidenavi">
+SERVICES</div></a>
+
+<a href="#tag03" target="_self">
+<div class="sidenavi">
+ABOUT</div></a>
+
+<a href="#tag04" target="_self">
+<div class="sidenavi">
+CONTACT</div></a>
+
+<a href="http://blog.46lab.jp" target="_self">
+
+<div class="sidenavi">
+BLOG</div></a>
+</div><!--/side-->
+
+
+<div class="st">
+オープンソース＆組込みシステム開発のコンサルティングカンパニー
+</div>
+
+</body>
+
+<div id="back-to-top"><a href="#"><img src="image/up80x35.png" /></a></div>
+
+<div>
+<p id="page-top"><a href="index.html" target="_self"><img src="image/logo_80x80-b.png"  border="0"></a></p>
+</div>
+
+</html>

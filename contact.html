@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/Javascript" />
+<meta name="keywords" content="フォーティシックスラボ,Linux,OSS,コンサルティング,組み込みシステム,組込みシステム,木内志朗,中野,3D Printer,FabLab" />
+<meta name="description" content="フォーティシックスラボはLinux、Androidなど組込みシステム開発のコンサルティングカンパニーです。"/>
+
+<title>組込みシステムコンサルティング｜フォーティシックスラボ｜東京</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon46.ico">
+
+<link rel="stylesheet" href="css/wideslider_1.css" type="text/css" media="all" />
+<link href="css/46lab_1.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/wideslider.js"></script>
+<!--
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyB-xigpikqqkfLcfMKuQ2u1z05cDv6HBQc"></script>
+<script type="text/javascript" src="js/map.js"></script>
+-->
+
+<script type="text/javascript">  
+  $(function(){   
+    $('.bg_slideshow img:gt(0)').hide();  
+    setInterval(function() {  
+      $('.bg_slideshow :first-child').fadeOut(4000)  
+        .next('img').fadeIn(5000)  
+      .end().appendTo('.bg_slideshow');  
+    }, 7000);
+  });  
+</script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("img").lazyload({
+        placeholder : "image/space10x10.gif",
+        effect      : "fadeIn"
+    });
+});
+</script>
+
+<script language="javaScript" type="text/javaScript">
+   $(function(){
+       $("#back-to-top").hide();
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 700){
+                   $("#back-to-top").fadeIn();
+            }   else{
+                   $("#back-to-top").fadeOut();
+            }
+        });
+        $("#back-to-top a").click(function(){
+            $("body,html").animate({
+                scrollTop:0
+           },500);
+           return false;
+       });
+    });
+</script>
+    
+<script type="text/javascript">
+  $(function() {
+    $(window).bind("scroll" , function(e) {
+        var scrollTop = $(window).scrollTop();
+        $("#bg_slideshow").text(scrollTop);
+    });
+  });
+</script>
+
+<script type="text/javascript">
+var point0Top = 290;
+var point00Top = 140;
+$(function() {
+    $(window).bind("scroll" , function(e) {
+        var scrollTop = $(window).scrollTop();
+        $("#bg_slideshow").text(scrollTop);
+		$("#top_title").css("top" , point0Top - (scrollTop * 0.3) + "px");
+      $("#top_logo").css("top" , point00Top - (scrollTop * 0.1) + "px");   
+    });
+});
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35960194-7', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<!-- body -------------------------------------------->
+<body>
+
+<div class="svs_bgslide">
+<img src="image/office01.jpg" width="1600" height="1180" />
+</div>
+
+<div id="logo_t2"><a href="index.html" target="_self"><img src="image/logo_80x80-b.png"  border="0"></a>
+</div>
+
+<div id="container">
+  <div id="svs_mainbg">
+    <div id="main-c">
+     <div class="svs_title"><img class="title_img" src="image/space10x10.gif" data-original="image/t-contact.png" width="229" height="38"/>
+<div class="under-catch">お問い合わせ</div></div>
+     
+<div class="maincopy_con">ご質問・ご相談は下記のフォームをご利用ください。<br />
+なお、* 項目は必須入力項目ですので必ずご記入ください。<br />
+</div>
+
+<div class="subcopy"><i class="undercatch"></i> お問い合わせフォーム</div>
+
+<!-- Original
+<form id="mailform" method="post" action="mailform/send.cgi" onSubmit="return sendMail(this);">
+<input type="hidden" name="must_id" value="(必須)">
+<input type="hidden" name="sendmail" value="/usr/sbin/sendmail">
+<div class="contactbg" >
+
+
+<div class="contact-0">
+<div class="contact-1">お名前(Your name) <font color="Red">*</font></div>
+<div class="contact-2"><input type="text" name="お名前(必須)" size="40" style="font-size:13px; background-color: #f0f0eb;">
+  　</div>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">会社名(Company) <font color="Red">*</font></div>
+<div class="contact-2"><input type="text" name="会社名" size="40" style="font-size:13px; background-color: #f0f0eb;">
+  　</div>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">電話番号(Your contact phone)</div>
+<div class="contact-2"><input type="TEXT" name="電話番号" size="40" style="font-size:13px; background-color: #f0f0eb;"></div>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">メールアドレス(Your email address) <font color="Red">*</font></div>
+<div class="contact-2"><input type="text" name="email(必須)" size="40" style="font-size:13px; background-color: #f0f0eb;">
+</div>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">お問い合わせ内容(Your message) <font color="Red">*</font></div>
+<div class="contact-2"><textarea name="お問い合わせ内容(必須)" cols="40" rows="10" style="font-size:13px; background-color: #f0f0eb;"></textarea></div>
+</div>
+
+<div style="padding-top: 40px; padding-bottom: 40px;">
+<input type="image" src="image/soushin.png" alt="送 信" name="submit">
+</div>
+
+</div>
+</form>
+-->
+<form id="mailform" method="post" action="../cgi/postmail/postmail.cgi">
+<input type="hidden" name="need" value="name email">
+<input type="hidden" name="match" value="email email2">
+<div class="contactbg" >
+
+
+<div class="contact-0">
+<div class="contact-1">お名前(Your name) <font color="Red">*</font></div>
+<div class="contact-2"><input type="text" name="name" size="40" style="font-size:13px; background-color: #f0f0eb;">
+  　</div>
+</div>
+<!--
+<div class="contact-0">
+<div class="contact-1">会社名(Company) <font color="Red">*</font></div>
+<div class="contact-2"><input type="text" name="会社名" size="40" style="font-size:13px; background-color: #f0f0eb;">
+  　</div>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">電話番号(Your contact phone)</div>
+<div class="contact-2"><input type="TEXT" name="電話番号" size="40" style="font-size:13px; background-color: #f0f0eb;"></div>
+</div>
+-->
+<div class="contact-0">
+<div class="contact-1">メールアドレス(Your email address) <font color="Red">*</font></div>
+<div class="contact-2"><input type="text" name="email" size="40" style="font-size:13px; background-color: #f0f0eb;"></div>
+<div class="contact-2"><input type="text" name="email2" size="40" style="font-size:13px; background-color: #f0f0eb;"></div>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">お問い合わせ種別 <font color="Red">*</font></div>
+	<td>
+		<input type="radio" name="問合せ種別" value="ご質問" />ご質問<br />
+		<input type="radio" name="問合せ種別" value="ご相談" />ご相談<br />
+		<input type="radio" name="問合せ種別" value="ご依頼" />ご依頼<br />
+		<input type="radio" name="問合せ種別" value="その他" />その他
+	</td>
+</div>
+
+<div class="contact-0">
+<div class="contact-1">お問い合わせ内容(Your message) <font color="Red">*</font></div>
+<div class="contact-2"><textarea name="メッセージ" cols="40" rows="10" style="font-size:13px; background-color: #f0f0eb;"></textarea></div>
+</div>
+
+<div style="padding-top: 40px; padding-bottom: 40px;">
+<input type="submit" value="送信する"><input type="reset" value="リセット" />
+</div>
+</div>
+</form>
+
+
+
+<!--
+
+<blockquote>
+<form action="./postmail.cgi" method="post">
+<input type="hidden" name="need" value="name email 問合せ種別" />
+<input type="hidden" name="match" value="email email2" />
+<table summary="問合せフォーム" class="form">
+<tr>
+	<th>お名前</th>
+	<td><input type="text" name="name" size="50" /></td>
+</tr><tr>
+	<th>メールアドレス</th>
+	<td>
+		<input type="text" name="email" size="50" /><br />
+		<input type="text" name="email2" size="50" />（再度入力）
+	</td>
+</tr><tr>
+	<th>問合せ種別</th>
+	<td>
+		<input type="radio" name="問合せ種別" value="ご質問" />ご質問<br />
+		<input type="radio" name="問合せ種別" value="ご相談" />ご相談<br />
+		<input type="radio" name="問合せ種別" value="ご感想" />ご感想<br />
+		<input type="radio" name="問合せ種別" value="ご依頼" />ご依頼<br />
+		<input type="radio" name="問合せ種別" value="その他" />その他
+	</td>
+</tr><tr>
+	<th>問合せ内容</th>
+	<td><textarea name="メッセージ" rows="7" cols="100"></textarea></td>
+</tr>
+</table>
+<br />
+<input type="submit" value="送信する" /><input type="reset" value="リセット" />
+</form>
+
+<strong class="ttl">個人情報の取扱いについて</strong>
+<ol>
+<li>ご記入いただいた個人情報は、お問い合わせへの対応および確認のためのみに利用します。</li>
+<li>また、この目的のためにお問い合わせの記録を残すことがあります。</li>
+</ol>
+</blockquote>
+-->
+
+</div><!-- /main -->
+
+<div class="go3">
+<div class="adv">メールをご利用の場合は下記アドレスへ送信ください。</div>
+<div class="form-2">
+<a href="mailto:info@breath-r.com"><img class="title_img" src="image/space10x10.gif" data-original="image/mail.png" width="200" height="35" /></a></div>
+</div>
+
+</div>
+
+</div><!-- svs_mainbg -->
+
+<!-- Footer -->
+<div id="footerbg2-t">
+<div id="footer2">
+
+<div id="face"><a href="https://www.facebook.com/46lab" target="_blank"><img src="image/facebook.png" width="30" height="30" border="0" /></a></div>
+<div id="twi"><a href="https://twitter.com/46kiuchi" target="_blank"><img src="image/twitter.png" width="30" height="30" border="0"></a></div>
+<div id="footernavi"><a href="index.html" style="text-decoration:none" target="_self">HOME</a>　</div>
+<div id="footercopy"><img src="image/46lab_110x18.png"  border="0"></div>
+
+
+</div><!-- /footer2 -->
+</div><!--/footerbg2-t-->
+
+<!-- Side menu bar -->
+<div id="side">
+<a href="index.html#tag01" target="_self">
+<div class="sidenavi">
+CONCEPT</div></a>
+
+<a href="index.html#tag02" target="_self">
+<div class="sidenavi">
+SERVICES</div></a>
+
+<a href="index.html#tag03" target="_self">
+<div class="sidenavi">
+ABOUT</div></a>
+
+<a href="index.html#tag04" target="_self">
+<div class="sidenavi">
+CONTACT</div></a>
+
+<a href="http://blog.46lab.jp" target="_self">
+<div class="sidenavi">
+BLOG</div></a>
+</div><!--/side-->
+
+<div class="back-prev"><a href="index.html#tag04" target="_self"><img src="image/cross50x50.png" border="0"></a></div>
+
+<div class="st">
+オープンソース＆組込みシステム開発のコンサルティングカンパニー
+</div>
+
+</body>
+
+<div id="back-to-top"><a href="#"><img src="image/up80x35.png" /></a></div>
+
+<div>
+<p id="page-top"><a href="index.html" target="_self"><img src="image/logo_80x80-b.png"  border="0"></a></p>
+</div>
+
+</html>
